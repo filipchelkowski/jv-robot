@@ -7,6 +7,12 @@ public class Robot {
     private int coordinateY;
     private Direction direction;
 
+    public Robot(Direction direction, int coordinateX, int coordinateY) {
+        this.coordinateX = coordinateX;
+        this.coordinateY = coordinateY;
+        this.direction = direction;
+    }
+
     public Robot() {
         this.coordinateX = new Random().nextInt();
         this.coordinateY = new Random().nextInt();
